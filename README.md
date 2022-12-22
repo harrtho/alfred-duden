@@ -1,6 +1,6 @@
 # Duden.de search workflow for Alfred #
 
-A workflow for [Alfred 3][alfred].
+A workflow for [Alfred 5][alfred].
 
 Search the definitive German dictionary at [Duden.de][duden] with auto-suggest.
 
@@ -38,19 +38,19 @@ This workflow is based on the following libraries (also released under the MIT l
 
 - The legendary [Beautiful Soup][bs] by [Leonard Richardson][lenny],
 - the extremely awesome [html5lib][h5l] by [James Graham][jgraham] & co. and
-- the not entirely useless [Alfred-Workflow][aw] by [me][deanishe].
-
+- the not entirely useless [Alfred-PyWorkflow][aw] by [deanishe][deanishe] and [me][harrtho].
 
 [alfred]: http://www.alfredapp.com/
-[aw]: http://www.deanishe.net/alfred-workflow/index.html
+[aw]: http://www.xdevcloud.de/alfred-pyworkflow/index.html
 [bs]: http://www.crummy.com/software/BeautifulSoup/
 [mit]: http://opensource.org/licenses/MIT
 [h5l]: https://github.com/html5lib/html5lib-python
 [deanishe]: https://github.com/deanishe/
+[harrtho]: https://github.com/harrtho/
 [duden]: http://www.duden.de/woerterbuch
-[releases]: https://github.com/deanishe/alfred-duden/releases/latest
-[demo]: https://raw.githubusercontent.com/deanishe/alfred-duden/master/demo.gif "Workflow in action"
-[issues]: https://github.com/deanishe/alfred-duden/issues
+[releases]: https://github.com/harrtho/alfred-duden/releases/latest
+[demo]: https://raw.githubusercontent.com/harrtho/alfred-duden/master/demo.gif "Workflow in action"
+[issues]: https://github.com/harrtho/alfred-duden/issues
 [forum]: http://www.alfredforum.com/topic/4707-duden-dictionary-search-with-auto-suggest/
 [lenny]: http://www.crummy.com/self/
 [jgraham]: https://github.com/jgraham

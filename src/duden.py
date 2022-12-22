@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
-# Copyright © 2014 deanishe@deanishe.net
+# Copyright (c) 2022 Thomas Harr <xDevThomas@gmail.com>
+# Copyright (c) 2014 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
@@ -14,25 +15,23 @@ A workflow for Alfred 3+ (http://www.alfredapp.com/).
 Search the definitive German dictionary at http://www.duden.de.
 """
 
-from __future__ import print_function, unicode_literals
 
-import htmlentitydefs
-from hashlib import md5
-import sys
-import urllib
+import html.entities
 import re
+import sys
+import urllib.parse
+from hashlib import md5
 
-from workflow import web, Workflow3, ICON_WARNING
+from workflow import ICON_WARNING, Workflow, web
 
-
-UPDATE_SETTINGS = {'github_slug': 'deanishe/alfred-duden'}
+UPDATE_SETTINGS = {'github_slug': 'harrtho/alfred-duden'}
 # USER_AGENT = ('Mozilla/5.0 (Windows NT 5.1; rv:31.0) '
 #               'Gecko/20100101 Firefox/31.0')
 USER_AGENT = ('Alfred-Duden/{version} '
-              '(https://github.com/deanishe/alfred-duden)')
+              '(https://github.com/harrtho/alfred-duden)')
 
-BASE_URL = b'http://www.duden.de'
-SEARCH_URL = b'{}/suchen/dudenonline/{{query}}'.format(BASE_URL)
+BASE_URL = 'http://www.duden.de'
+SEARCH_URL = '{}/suchen/dudenonline/{{query}}'.format(BASE_URL)
 
 MAX_CACHE_AGE = 86400  # 1 day
 MIN_QUERY_LENGTH = 2
@@ -57,15 +56,15 @@ def unescape(text):
             # character reference
             try:
                 if text[:3] == "&#x":
-                    return unichr(int(text[3:-1], 16))
+                    return chr(int(text[3:-1], 16))
                 else:
-                    return unichr(int(text[2:-1]))
+                    return chr(int(text[2:-1]))
             except ValueError:
                 pass
         else:
             # named entity
             try:
-                text = unichr(htmlentitydefs.name2codepoint[text[1:-1]])
+                text = chr(html.entities.name2codepoint[text[1:-1]])
             except KeyError:
                 pass
         return text  # leave as is
@@ -106,7 +105,7 @@ def lookup(query):
     """Get results matching ``query`` from duden.de.
 
     :param query: Search term to look up
-    :type query: ``unicode``
+    :type query: ``str``
     :returns: (possibly empty) list of search results
     :rtype: ``list``
 
@@ -119,7 +118,7 @@ def lookup(query):
             html = fp.read()
 
     else:
-        url = SEARCH_URL.format(query=urllib.quote(query.encode('utf-8')))
+        url = SEARCH_URL.format(query=urllib.parse.quote(query.encode('utf-8')))
         log.debug(url)
 
         user_agent = USER_AGENT.format(version=wf.version)
@@ -131,7 +130,7 @@ def lookup(query):
         html = r.content
 
     # Parse results
-    soup = BS(html, b'html5lib')
+    soup = BS(html, 'html5lib')
     elems = soup.find_all('section', {'class': 'vignette'})
 
     for elem in elems:
@@ -229,7 +228,7 @@ def main(wf):
 
 
 if __name__ == '__main__':
-    wf = Workflow3(
+    wf = Workflow(
         update_settings=UPDATE_SETTINGS,
         libraries=['./lib'])
     log = wf.logger

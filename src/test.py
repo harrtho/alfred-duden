@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
-# Copyright © 2014 deanishe@deanishe.net
+# Copyright (c) 2022 Thomas Harr <xDevThomas@gmail.com>
+# Copyright (c) 2014 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
@@ -10,12 +11,9 @@
 
 """Simple tests for Duden parser."""
 
-from __future__ import print_function, unicode_literals
 
-# from pprint import pprint
-
-from workflow import Workflow
 import duden
+from workflow import Workflow
 
 wf = Workflow()
 duden.log = wf.logger
