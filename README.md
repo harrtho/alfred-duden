@@ -1,4 +1,4 @@
-# Duden.de search workflow for Alfred #
+# Duden.de search workflow for Alfred
 
 A workflow for [Alfred 5][alfred].
 
@@ -6,14 +6,12 @@ Search the definitive German dictionary at [Duden.de][duden] with auto-suggest.
 
 ![Workflow in action][demo]
 
-
-## Download and installation ##
+## Download and installation
 
 Download the Workflow from the [GitHub releases page][releases] and double-click
 the `Duden-Search-XXX.alfredworkflow` file to install.
 
-
-## Usage ##
+## Usage
 
 Default keyword is `duden`. Enter your query after that.
 
@@ -23,14 +21,12 @@ your browser. Pressing `⌘` on a result will show the URL in its subtitle.
 You can also assign a Hotkey (keyboard shortcut) that will look up the currently
 selected text in any application.
 
-
-## Feedback ##
+## Feedback
 
 If you have a feature request, bug report or other query, you can get in touch
 using the [GitHub issue tracker][issues] or [the Alfred Forum page][forum].
 
-
-## Licensing, thanks ##
+## Licensing, thanks
 
 The code of this workflow is released under the [MIT licence][mit].
 
