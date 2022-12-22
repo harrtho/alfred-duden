@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>net.deanishe.alfred-duden</string>
+	<string>de.xdevcloud.alfred-duden</string>
 	<key>connections</key>
 	<dict>
 		<key>6037CB3D-6245-4110-841F-C02A44A1442B</key>
@@ -34,7 +34,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Dean Jackson</string>
+	<string>Thomas Harr</string>
 	<key>description</key>
 	<string>Search Duden.de German Dictionary</string>
 	<key>disabled</key>
@@ -177,6 +177,6 @@ Search the Duden German dictionary at duden.de.</string>
 	<key>version</key>
 	<string>2.0.0</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/harrtho/alfred-duden</string>
 </dict>
 </plist>
