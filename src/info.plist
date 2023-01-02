@@ -71,7 +71,7 @@
 				<key>runningsubtext</key>
 				<string>Searching…</string>
 				<key>script</key>
-				<string>/usr/local/bin/python3 duden.py "{query}"</string>
+				<string>/usr/bin/env python3 duden.py "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -175,7 +175,7 @@ Search the Duden German dictionary at duden.de.</string>
 	<key>userconfigurationconfig</key>
 	<array/>
 	<key>version</key>
-	<string>2.0.0</string>
+	<string>2.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/harrtho/alfred-duden</string>
 </dict>
