@@ -32,29 +32,28 @@ using the [GitHub issue tracker][issues] or [the Alfred Forum page][forum].
 
 ## Licensing, thanks
 
-The code of this workflow is released under the [MIT licence][mit].
+The code of this workflow is released under the [MIT licence][mit-licence].
 
 This workflow is based on the following libraries (also released under the MIT licence):
 
 - The legendary [Beautiful Soup][bs] by [Leonard Richardson][lenny],
 - the extremely awesome [html5lib][h5l] by [James Graham][jgraham] & co. and
-- the not entirely useless [Alfred-PyWorkflow][aw] by [deanishe][deanishe] and [me][harrtho].
+- the not entirely useless [Alfred-PyWorkflow][alfred-pyworkflow] by [deanishe][deanishe] and [me][harrtho].
 
-[alfred]: http://www.alfredapp.com/
-[aw]: http://www.xdevcloud.de/alfred-pyworkflow/index.html
-[bs]: http://www.crummy.com/software/BeautifulSoup/
+[alfred]: https://www.alfredapp.com/
+[alfred-pyworkflow]: https://www.github.com/harrtho/alfred-pyworkflow/
+[bs]: https://www.crummy.com/software/BeautifulSoup/
 [deanishe]: https://github.com/deanishe/
 [demo]: https://raw.githubusercontent.com/harrtho/alfred-duden/master/demo.gif "Workflow in action"
 [downloads-shield]: https://img.shields.io/github/downloads/harrtho/alfred-duden/total.svg
-[duden]: http://www.duden.de/woerterbuch
-[forum]: http://www.alfredforum.com/topic/4707-duden-dictionary-search-with-auto-suggest/
+[duden]: https://www.duden.de/woerterbuch
+[forum]: https://www.alfredforum.com/topic/4707-duden-dictionary-search-with-auto-suggest/
 [h5l]: https://github.com/html5lib/html5lib-python
 [harrtho]: https://github.com/harrtho/
 [issues]: https://github.com/harrtho/alfred-duden/issues
 [jgraham]: https://github.com/jgraham
-[lenny]: http://www.crummy.com/self/
+[lenny]: https://www.crummy.com/self/
 [licence-shield]: https://img.shields.io/github/license/harrtho/alfred-duden.svg
-[mit-licence]: http://opensource.org/licenses/MIT
-[mit]: http://opensource.org/licenses/MIT
+[mit-licence]: https://opensource.org/licenses/MIT
 [releases]: https://github.com/harrtho/alfred-duden/releases
 [version-shield]: https://img.shields.io/github/release/harrtho/alfred-duden.svg
