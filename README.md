@@ -1,5 +1,9 @@
 # Duden.de search workflow for Alfred
 
+[![GitHub Version][version-shield]][releases]
+[![GitHub All Releases][downloads-shield]][releases]
+[![GitHub][licence-shield]][mit-licence]
+
 A workflow for [Alfred 5][alfred].
 
 Search the definitive German dictionary at [Duden.de][duden] with auto-suggest.
@@ -39,14 +43,18 @@ This workflow is based on the following libraries (also released under the MIT l
 [alfred]: http://www.alfredapp.com/
 [aw]: http://www.xdevcloud.de/alfred-pyworkflow/index.html
 [bs]: http://www.crummy.com/software/BeautifulSoup/
-[mit]: http://opensource.org/licenses/MIT
-[h5l]: https://github.com/html5lib/html5lib-python
 [deanishe]: https://github.com/deanishe/
-[harrtho]: https://github.com/harrtho/
-[duden]: http://www.duden.de/woerterbuch
-[releases]: https://github.com/harrtho/alfred-duden/releases/latest
 [demo]: https://raw.githubusercontent.com/harrtho/alfred-duden/master/demo.gif "Workflow in action"
-[issues]: https://github.com/harrtho/alfred-duden/issues
+[downloads-shield]: https://img.shields.io/github/downloads/harrtho/alfred-duden/total.svg
+[duden]: http://www.duden.de/woerterbuch
 [forum]: http://www.alfredforum.com/topic/4707-duden-dictionary-search-with-auto-suggest/
-[lenny]: http://www.crummy.com/self/
+[h5l]: https://github.com/html5lib/html5lib-python
+[harrtho]: https://github.com/harrtho/
+[issues]: https://github.com/harrtho/alfred-duden/issues
 [jgraham]: https://github.com/jgraham
+[lenny]: http://www.crummy.com/self/
+[licence-shield]: https://img.shields.io/github/license/harrtho/alfred-duden.svg
+[mit-licence]: http://opensource.org/licenses/MIT
+[mit]: http://opensource.org/licenses/MIT
+[releases]: https://github.com/harrtho/alfred-duden/releases
+[version-shield]: https://img.shields.io/github/release/harrtho/alfred-duden.svg
