@@ -2,7 +2,7 @@
 
 [![GitHub Version][version-shield]][releases]
 [![GitHub All Releases][downloads-shield]][releases]
-[![GitHub][licence-shield]][mit-licence]
+[![GitHub][license-shield]][mit-license]
 
 A workflow for [Alfred 5][alfred].
 
@@ -32,9 +32,9 @@ using the [GitHub issue tracker][issues] or [the Alfred Forum page][forum].
 
 ## Licensing, thanks
 
-The code of this workflow is released under the [MIT licence][mit-licence].
+The code of this workflow is released under the [MIT license][mit-license].
 
-This workflow is based on the following libraries (also released under the MIT licence):
+This workflow is based on the following libraries (also released under the MIT license):
 
 - The legendary [Beautiful Soup][bs] by [Leonard Richardson][lenny],
 - the extremely awesome [html5lib][h5l] by [James Graham][jgraham] & co. and
@@ -53,7 +53,7 @@ This workflow is based on the following libraries (also released under the MIT l
 [issues]: https://github.com/harrtho/alfred-duden/issues
 [jgraham]: https://github.com/jgraham
 [lenny]: https://www.crummy.com/self/
-[licence-shield]: https://img.shields.io/github/license/harrtho/alfred-duden.svg
-[mit-licence]: https://opensource.org/licenses/MIT
+[license-shield]: https://img.shields.io/github/license/harrtho/alfred-duden.svg
+[mit-license]: https://opensource.org/licenses/MIT
 [releases]: https://github.com/harrtho/alfred-duden/releases
 [version-shield]: https://img.shields.io/github/release/harrtho/alfred-duden.svg
